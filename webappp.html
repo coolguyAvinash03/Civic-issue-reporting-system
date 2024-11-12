@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Civic Issue Reporting</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Report a Civic Issue</h1>
+    <form id="issueForm">
+        <label for="serviceType">Issue Type:</label>
+        <select id="serviceType" name="serviceType">
+            <option value="streetlight">Broken Streetlight</option>
+            <option value="road">Road Quality</option>
+            <option value="water">Water Quality</option>
+            <option value="air">Air Quality</option>
+        </select><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location"><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
+
+        <button type="button" onclick="submitIssue()">Submit</button>
+    </form>
+
+    <div id="response"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
